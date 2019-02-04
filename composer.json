@@ -1,0 +1,19 @@
+{
+  "name": "arnaudbablon/image-skeleton",
+  "description": "My first Composer project",
+  "authors": [
+    {
+      "name": "BABLON Arnaud",
+      "email": "arnaudlebogosse@gmail.com"
+    }
+  ],
+  "minimum-stability": "dev",
+  "require": {
+    "php": ">=7.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "ImageSkeleton\\": "src/"
+    }
+  }
+}
