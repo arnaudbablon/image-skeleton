@@ -1,7 +1,7 @@
 <?php
 namespace ImageSkeleton\Classe\Button;
 
-use App\Classe\Image\Image;
+use ImageSkeleton\Classe\Image\Image;
 
 abstract class Button {
     /** @var Image  */

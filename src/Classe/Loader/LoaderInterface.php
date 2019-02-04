@@ -1,5 +1,5 @@
 <?php
-namespace App\Classe\Loader;
+namespace ImageSkeleton\Classe\Loader;
 
 interface LoaderInterface
 {

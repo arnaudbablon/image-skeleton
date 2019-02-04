@@ -1,5 +1,5 @@
 <?php
-namespace App\Classe\Button;
+namespace ImageSkeleton\Classe\Button;
 
 interface ButtonInterface {
     public function getCoord(): array;

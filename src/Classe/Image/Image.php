@@ -1,7 +1,7 @@
 <?php
 namespace ImageSkeleton\Classe\Image;
 
-use App\Classe\Loader\LoaderInterface;
+use ImageSkeleton\Classe\Loader\LoaderInterface;
 
 abstract class Image {
     /** @var string  */
