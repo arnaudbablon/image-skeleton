@@ -1,10 +1,10 @@
 <?php
 namespace ImageSkeleton\Classe\Loader;
 
-class LoaderPng implements LoaderInterface
+class LoaderBase64 implements LoaderInterface
 {
     public function load(string $mixed)
     {
-        return imagecreatefrompng($mixed);
+        return imagecreatefromstring($mixed);
     }
 }

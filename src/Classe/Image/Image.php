@@ -4,8 +4,10 @@ namespace ImageSkeleton\Classe\Image;
 use ImageSkeleton\Classe\Loader\LoaderInterface;
 
 abstract class Image {
-    /** @var string  */
-    private $path;
+    /** @var string
+      * path or base64 of image
+     */
+    private $mixed;
 
     /** @var LoaderInterface  */
     private $loader;
@@ -13,17 +15,22 @@ abstract class Image {
     /** @var resource */
     private $resource;
 
+    /**
+     * Image constructor.
+     * @param LoaderInterface $loader
+     * @param string $mixed
+     */
     public function __construct(
         LoaderInterface $loader,
-        string $path
+        string $mixed
     ) {
         $this->loader = $loader;
-        $this->path = $path;
+        $this->mixed = $mixed;
     }
 
     public function load()
     {
-        $this->resource = $this->loader->load($this->path);
+        $this->resource = $this->loader->load($this->mixed);
     }
 
     /**

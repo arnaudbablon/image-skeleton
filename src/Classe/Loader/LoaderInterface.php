@@ -3,5 +3,9 @@ namespace ImageSkeleton\Classe\Loader;
 
 interface LoaderInterface
 {
-    public function load(string $path);
+    /**
+     * @param string $mixed can be base64 / path
+     * @return mixed
+     */
+    public function load(string $mixed);
 }
